@@ -389,11 +389,11 @@ body
             </div>
             <div id="player-content">
                 <div id="album-art">
-                    <img src="https://i.pinimg.com/736x/b5/3b/4e/b53b4eb1f9bf9b66f0143991d101195a.jpg" class="active" id="_1">
-                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_2.jpg" id="_2">
-                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg" id="_3">
-                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg" id="_4">
-                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg" id="_5">
+                    <img src="https://i.pinimg.com/736x/ec/e7/e3/ece7e3e384f402768e1e823aab3c9e54.jpg" class="active" id="_1">
+                    <img src="https://i.pinimg.com/1200x/d4/69/e2/d469e2b65f04324f422965057ca1098d.jpg" id="_2">
+                    <img src="https://i.pinimg.com/736x/72/36/5f/72365fbfe119180a998a47261ce548c2.jpg" id="_3">
+                    <img src="https://i.pinimg.com/736x/af/9d/7b/af9d7b05bca7b79b82bf6c2a7fdcb49d.jpg" id="_4">
+                    <img src="https://i.pinimg.com/1200x/4d/1b/ac/4d1bacf55050d50f5ad8b01b7f7f08a9.jpg" id="_5">
                     <div id="buffer-box">Buffering ...</div>
                 </div>
                 <div id="player-controls">
@@ -424,7 +424,7 @@ body
   <script type="text/javascript">
     $(function()
 {
-    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['my magic shop','Me & You','Electro Boy','Home','Proxy (Original Mix)'], trackNames = ['you gave me the best of me','Alex Skrindo - Me & You','Kaaze - Electro Boy','Jordan Schor - Home','Martin Garrix - Proxy'], albumArtworks = ['_1','_2','_3','_4','_5'], trackUrl = ['https://raw.githubusercontent.com/saeju29/musicplayer/main/magicshop.mp3','https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3','https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3','https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3','https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['blonde','isolation','shut up my moms calling','you and i (expanded edition)','dont tap the glass'], trackNames = ['frank ocean- pink & white','kali uchis - after the storm (ft. tyler, the creator, bootsy collins)','hotel ugly - shut up my moms calling','jeff buckley - i know its over','tyler, the creator - ill take care of you'], albumArtworks = ['_1','_2','_3','_4','_5'], trackUrl = ['https://github.com/lilcowbie/idk/blob/main/Frank%20Ocean%20-%20Pink%20%20White.mp3','https://github.com/lilcowbie/idk/blob/main/Kali%20Uchis(Feat.%20Tyler%20the%20creator%20%26%20Bootsy%20Collins)%20-%20After%20The%20Storm%20(Lyrics).mp3','https://github.com/lilcowbie/idk/blob/main/Hotel%20Ugly%20-%20Shut%20Up%20My%20Mom's%20Calling.mp3','https://github.com/lilcowbie/idk/blob/main/Jeff%20Buckley%20-%20I%20Know%20It's%20Over%20(Lyrics).mp3','https://github.com/lilcowbie/idk/blob/main/Tyler%2C%20The%20Creator%20-%20I'll%20Take%20Care%20of%20You.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
 
     function playPause()
     {
